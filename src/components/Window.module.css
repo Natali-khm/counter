@@ -1,0 +1,32 @@
+.window{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 234, 234);
+}
+
+.windowError{
+  -webkit-box-shadow: 3px 2px 37px 17px rgba(126, 18, 18, 0.2) inset;
+  -moz-box-shadow: 3px 2px 37px 17px rgba(126, 18, 18, 0.2) inset;
+  box-shadow: 3px 2px 37px 17px rgba(126, 18, 18, 0.2) inset;
+}
+
+.counterDefault {
+  color: rgb(102, 99, 99);
+  font-size: 90px;
+}
+
+.counterRed{
+  color: rgb(216, 142, 142);
+}
+
+.message{
+  color: rgb(102, 99, 99);
+  font-size: 25px;
+}
+
+.error{
+  color: rgb(216, 142, 142);
+  font-size: 25px;
+}

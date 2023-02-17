@@ -1,0 +1,16 @@
+.default{
+  min-width: 100px;
+  min-height: 40px;
+  background-color: rgb(227, 142, 31);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+}
+
+.disabled{
+  background-color: rgb(207, 203, 203);
+  opacity: 50%;
+  color: rgb(110, 110, 110);
+}
+
