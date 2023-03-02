@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import CounterWithSeperatedSettings from './CounterWithSeperatedSettings';
 import reportWebVitals from './reportWebVitals';
+import CounterWithCombinedSettings from './CounterWithCombinedSettings';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>
+  <>
+   {/* <React.StrictMode> */}
+    <CounterWithSeperatedSettings />
+    <hr></hr>
+    <CounterWithCombinedSettings />
+   {/* </React.StrictMode> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

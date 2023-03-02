@@ -4,8 +4,8 @@ import s from './Window.module.css'
 type PropsType = {
   count: number
   maxValue: number
-  error: boolean
-  editMode: boolean
+  error?: boolean
+  editMode?: boolean
 }
 
 const Window: React.FC<PropsType> = ({count, maxValue, error, editMode}) => {

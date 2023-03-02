@@ -4,7 +4,7 @@ import s from './SuperButton.module.css'
 type PropsType = {
     children?: React.ReactNode
     callBack: () => void
-    disabled: boolean
+    disabled?: boolean
 }
 
 const SuperButton: React.FC<PropsType> = React.memo (({children, callBack, disabled}) => {

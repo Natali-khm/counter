@@ -2,6 +2,8 @@ import { ChangeEvent } from "react"
 import s from './Settings.module.css'
 import SuperButton from "./SuperButton"
 import SuperInput from "./SuperInput"
+import sCounter from './Counter.module.css'
+
 
 type PropsType={
     minValue: number 
@@ -18,14 +20,14 @@ type PropsType={
 const Settings = (props: PropsType) => {
 
   return (
-    <div className = {s.settings}>
+    <div className = {sCounter.counter}>
       <div className={s.window}>
 
         <div className={s.inputBlock}>
           <span>max value </span>
           <SuperInput value={props.maxValue}
                       onChange={props.handleMaxValue}
-                      className={props.errorForMax ? s.errorInput : s.defaultInput}
+                      className={props.errorForMax ? s.errorInput : ''}
                 />
         </div>
 
@@ -33,18 +35,18 @@ const Settings = (props: PropsType) => {
           <span>start value </span>
           <SuperInput value={props.minValue}
                       onChange={props.handleMinValue}
-                      className={props.errorForMin ? s.errorInput : s.defaultInput}
+                      className={props.errorForMin ? s.errorInput : ''}
               />
         </div>
         
       </div>
 
-      <div className={s.btnBlock}>
-        <SuperButton callBack={props.setValue} 
-                     disabled={props.disabled}>
-                     set
-        </SuperButton>
-      </div>
+        <div className={sCounter.btnBlock}>
+          <SuperButton callBack={props.setValue} 
+                       disabled={props.disabled}>
+                       set
+          </SuperButton>
+        </div>
     </div>
   )
 }
