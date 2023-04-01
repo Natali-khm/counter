@@ -1,8 +1,8 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import Window from './components/Window'
-import s from './components/Counter.module.css'
-import SuperButton from './components/SuperButton'
-import Settings from './components/Settings'
+import Window from '../components/Window'
+import s from '../components/Counter.module.css'
+import SuperButton from '../components/SuperButton'
+import Settings from '../components/Settings'
 
 
 const CounterWithCombinedSettings = () => {

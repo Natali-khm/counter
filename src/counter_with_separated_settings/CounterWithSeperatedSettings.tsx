@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import './CounterWithSeperatedSettings.css';
-import Settings from './components/Settings';
-import Counter from './components/Counter';
+import Settings from '../components/Settings';
+import Counter from '../components/Counter';
 
 
 function CounterWithSeperatedSettings() {

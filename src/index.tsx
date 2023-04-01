@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import CounterWithSeperatedSettings from './CounterWithSeperatedSettings';
+import CounterWithSeperatedSettings from './counter_with_separated_settings/CounterWithSeperatedSettings';
 import reportWebVitals from './reportWebVitals';
-import CounterWithCombinedSettings from './CounterWithCombinedSettings';
+import CounterWithCombinedSettings from './counter_with_combined_settings/CounterWithCombinedSettings';
+import CounterWithRedux from './counter_with_redux/CounterWithRedux';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,9 +14,22 @@ const root = ReactDOM.createRoot(
 root.render(
   <>
    {/* <React.StrictMode> */}
-    <CounterWithSeperatedSettings />
-    <hr></hr>
-    <CounterWithCombinedSettings />
+   <div>
+      <h3 className = 'title'> Counter with separated settings</h3>
+      <CounterWithSeperatedSettings />
+   </div>
+   <hr></hr>
+   <div>
+      <h3 className = 'title'>Counter with settings</h3>
+      <CounterWithCombinedSettings />
+   </div>
+   <hr></hr>
+   <div>
+      <h3 className = 'title'>Counter with Redux</h3>
+      <Provider store = {store}>
+         <CounterWithRedux />
+      </Provider>
+   </div>
    {/* </React.StrictMode> */}
   </>
 );
